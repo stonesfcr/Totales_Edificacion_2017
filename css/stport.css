@@ -1,0 +1,845 @@
+html, body {
+  width:100%;
+  margin:0px;
+}
+
+div#listaproy, div#tabla h6{
+	font-family: Oswald;
+	font-size:20px;
+}
+
+
+/*AJUSTE PARA DISTINTOS DISPLAYS*/
+
+/*###Desktops, big landscape tablets and laptops(Large, Extra large)####*/
+@media screen and (min-width: 1024px){
+#logo{
+	position:fixed;
+	top:20%;
+	height: 85px;
+ 	background-color: white;
+ 	min-width:400px;
+  	width:40%;
+  	left:30%;
+ 	opacity:0.9;
+ 	z-index:2000;
+}
+#bantop {
+	position:fixed;
+	width:50%;
+	left:25%;
+	margin-top:25px;
+	font-family:Anton;
+	font-size:26px;
+	text-align:center;
+}
+#logo1{
+	height:60px;
+}
+#logima {
+	float:left;
+	margin-top:12px;
+	margin-left:35px;
+}
+#menup {
+	position:fixed;
+	top:32%;
+	min-width:400px;
+  	width:50%;
+  	left:25%;
+	text-align:center;
+}
+#boton {
+	background-color: #0e4578;
+    border: none;
+    color: white;
+    padding: 12px 32px;
+	position:static;
+	left:10%;
+	width:65%; 
+	font-family: Oswald; 
+	font-style: bold;
+	font-size: 14px;
+	margin:10px;
+
+}
+#bott {
+	background-color: white;
+	font-family: Oswald;
+	font-size: 14px;
+}
+#simbologia{
+	background-color: white;
+	font-family: Oswald;
+	font-size: 14px;
+	text-align:center;
+	padding: 10px 32px;
+}
+/*###MENU LATERAL###*/
+#sideinfo_02 {
+	margin:5px;
+	height: 98%;
+	width: 29%;
+	position:fixed;
+	overflow: auto;
+}
+#logima2{
+	float:left;
+	margin-top:20px;
+	margin-left:25px;
+}
+#logo2{
+	height:80px;
+}
+#titulo{
+	text-align: right;
+	margin-top:45px;
+	margin-right: 2px;
+	font-family: Anton;
+	font-size: 20px;
+	background-color:#d1e0e0;
+}
+#subtit{
+	margin-top:35px; 
+	text-align:center; 
+	font-family: Oswald; 
+	font-size: 14px;
+}
+#subtit2{
+	margin-top:20px; 
+	text-align:center; 
+	font-family: Oswald; 
+	font-size: 14px;
+}
+#boton2 {
+	background-color: #0e4578;
+    border: none;
+    color: white;
+    padding: 10px 32px;
+	position:static;
+	left:10%;
+	width:80%; 
+	font-family: Oswald; 
+	font-style: bold;
+	font-size: 12px;
+	margin:8px;
+
+}
+.tabtop{
+	width:100%;
+	margin-top: 35px;
+	margin-bottom:50px;
+	font-family: Oswald;
+	font-size: 16px;
+	
+}
+
+.tabbot{
+	width:100%;
+	margin-top: 25px;
+	font-family: Oswald;
+	font-size: 14px;
+}
+.tit{
+	font-family: Oswald;
+	font-size: 16px;
+}
+#menutab1{
+	margin-top: 10px;
+	margin-left: 45px;
+}
+#td1{
+	width:50px;
+}
+#td2{
+	text-align:left;
+}
+#tabla{
+	margin:25px;
+	margin-top:45px;
+	font-family: Oswald;
+	font-size: 12px;
+	
+}
+#tablauv{
+	margin-left:45px;
+	margin-top:75px;
+	font-family: Oswald;
+	font-size: 14px;
+	
+}
+#irauv{
+	width:100%;
+}
+.tabtop-prc{
+	width:100%;
+	margin-top: 35px;
+	margin-bottom:20px;
+	font-family: Oswald;
+	font-size: 16px;
+	
+}
+.tabbot-prc{
+	width:100%;
+	margin-top: 25px;
+	font-family: Oswald;
+	font-size: 12px;
+
+}
+#notasprc{
+	margin-top:10px;
+	height:270px;
+	width:100%;
+	overflow:auto;
+}
+#notasprc2{
+	margin-top:10px;
+	height:190px;
+	width:100%;
+	overflow:auto;
+}
+#botonside-notas {
+	background-color: #0e4578;
+    border: none;
+    color: white;
+    padding: 5px;
+	position:static;
+	width:100%; 
+	font-family: Oswald; 
+	font-style: bold;
+	font-size: 14px;
+
+}
+#notas{
+	margin:5px;
+	font-family: Oswald;
+	font-size:12px;
+}
+#bot-notas {
+	background-color: white;
+	font-family: Oswald;
+	font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+#volv {
+	height:25px;
+	bottom:2px;
+	text-align:center;
+	margin-top:5px;
+	margin-right:14px;
+	margin-bottom:5px;
+	font-family: Anton;
+	font-size:14px;
+}
+
+#bottom{
+	position:fixed;
+	bottom:0;
+	margin:2px;
+	height: 16px;
+	width: 29%;
+	background-color: white;
+	text-align:center;
+	font-family: Oswald; 
+	font-style: bold;
+	font-size: 14px;
+	
+
+}
+
+
+}
+/*###Tablet(medium)###*/
+@media screen and (min-width : 768px) and (max-width : 1023px){
+/*Style*/
+#logo{
+	position:fixed;
+	top:20%;
+	height: 75px;
+ 	background-color: white;
+ 	min-width:300px;
+  	width:40%;
+  	left:30%;
+ 	opacity:0.9;
+ 	z-index:2000;
+}
+#bantop {
+	position:fixed;
+	width:50%;
+	left:25%;
+	margin-top:22px;
+	font-family:Anton;
+	font-size:20px;
+	text-align:center;
+}
+#logo1{
+	height:50px;
+}
+#logima {
+	float:left;
+	margin-top:12px;
+	margin-left:30px;
+}
+#menup {
+	position:fixed;
+	top:32%;
+	min-width:400px;
+  	width:50%;
+  	left:25%;
+	text-align:center;
+}
+#boton {
+	background-color: #0e4578;
+    border: none;
+    color: white;
+    padding: 12px 32px;
+	position:static;
+	left:8%;
+	width:60%; 
+	font-family: Oswald; 
+	font-style: bold;
+	font-size: 14px;
+	margin:10px;
+}
+#bott {
+	background-color: white;
+	font-family: Oswald;
+	font-size: 12px;
+}
+/*###MENU LATERAL###*/
+#sideinfo_02 {
+	margin:5px;
+	height: 98%;
+	width: 29%;
+	position:fixed;
+	overflow: auto;
+}
+#logima2{
+	float:left;
+	margin-top:20px;
+	margin-left:20px;
+}
+#logo2{
+	height:70px;
+}
+#titulo{
+	text-align: right;
+	margin-top:50px;
+	font-family: Anton;
+	font-size: 16px;
+	background-color:#d1e0e0;
+}
+#subtit{
+	margin-top:30px; 
+	text-align:center; 
+	font-family: Oswald; 
+	font-size: 10px;
+}
+#subtit2{
+	margin-top:20px; 
+	text-align:center; 
+	font-family: Oswald; 
+	font-size: 10px;
+}
+#boton2 {
+	background-color: #0e4578;
+    border: none;
+    color: white;
+    padding: 10px 32px;
+	position:static;
+	left:10%;
+	width:80%; 
+	font-family: Oswald; 
+	font-style: bold;
+	font-size: 10px;
+	margin:8px;
+
+}
+
+.tabtop{
+	width:100%;
+	margin-top: 35px;
+	margin-bottom:50px;
+	font-family: Oswald;
+	font-size: 13px;
+	
+}
+
+.tabbot{
+	width:100%;
+	margin-top: 25px;
+	font-family: Oswald;
+	font-size: 11px;
+
+}
+.tit{
+	font-family: Oswald;
+	font-size: 12px;
+}
+#menutab1{
+	margin-top: 10px;
+	margin-left: 25px;
+}
+#td1{
+	width:50px;
+}
+#td2{
+	text-align:left;
+}
+#tabla{
+	margin:10px;
+	margin-top:35px;
+	font-family: Oswald;
+	font-size: 12px;
+	
+}
+#tablauv{
+	margin-left:35px;
+	margin-top:75px;
+	font-family: Oswald;
+	font-size: 12px;
+	
+}
+#irauv{
+	width:100%;
+}
+.tabtop-prc{
+	width:100%;
+	margin-top: 35px;
+	margin-bottom:20px;
+	font-family: Oswald;
+	font-size: 12px;
+	
+}
+.tabbot-prc{
+	width:100%;
+	margin-top: 25px;
+	font-family: Oswald;
+	font-size: 10px;
+
+}
+#notasprc{
+	margin-top:10px;
+	height:270px;
+	width:100%;
+	overflow:auto;
+}
+#notasprc2{
+	margin-top:10px;
+	height:180px;
+	width:100%;
+	overflow:auto;
+}
+#botonside-notas {
+	background-color: #0e4578;
+    border: none;
+    color: white;
+    padding: 5px;
+	position:static;
+	width:100%; 
+	font-family: Oswald; 
+	font-style: bold;
+	font-size: 12px;
+
+}
+#notas{
+	margin:1px;
+	font-family: Oswald;
+	font-size:10px;
+}
+#bot-notas {
+	background-color: white;
+	font-family: Oswald;
+	font-size: 10px;
+}
+
+
+
+
+
+
+
+
+#volv {
+	height:25px;
+	text-align:center;
+	margin-top:5px;
+	margin-right:14px;
+	margin-bottom:5px;
+	font-family: Anton;
+	font-size:12px;
+
+}
+
+#bottom{
+	position:fixed;
+	bottom:0;
+	margin:2px;
+	height: 14px;
+	width: 29%;
+	background-color: white;
+	text-align:center;
+	font-family: Oswald; 
+	font-style: bold;
+	font-size: 12px;
+	
+
+}
+
+}
+/*### Smartphones (portrait and landscape)(small)### */
+@media screen and (min-width : 0px) and (max-width : 767px){
+/*Style*/
+#logo{
+	position:fixed;
+	top:12%;
+	height: 50px;
+ 	background-color: white;
+ 	min-width:200px;
+ 	width:95%;
+  	left:1%;
+ 	opacity:0.9;
+ 	z-index:2000;
+}
+#bantop {
+	position:static;
+	width:90%;
+	margin-top:16px;
+	font-family:Anton;
+	font-size:14px;
+	text-align:center;
+}
+#logo1{
+	height:35px;
+
+}
+#logima {
+	float:left;
+	margin-top:10px;
+	margin-left:32px;
+}
+#menup {
+	position:fixed;
+	top:21%;
+	min-width:250px;
+  	width:95%;
+  	left:1%;
+	text-align:center;
+}
+#boton {
+	background-color: #0e4578;
+    border: none;
+    color: white;
+    padding: 12px 32px;
+	position:static;
+	left:1%;
+	width:90%; 
+	font-family: Oswald; 
+	font-style: bold;
+	font-size: 10px;
+	margin:10px;
+
+}
+#bott {
+	background-color: white;
+	font-family: Oswald;
+	font-size: 10px;
+
+}
+/*###MENU LATERAL###*/
+#sideinfo_02 {
+	margin:5px;
+	height: 98%;
+	width: 29%;
+	position:fixed;
+	overflow: auto;
+}
+#logima2{
+	float:left;
+	margin-top:20px;
+	margin-left:25px;
+}
+#logo2{
+	height:50px;
+}
+#titulo{
+	text-align: center;
+	margin-top:45px;
+	font-family: Anton;
+	font-size: 12px;
+	background-color:#d1e0e0;
+}
+#subtit{
+	margin-top:30px; 
+	text-align:center; 
+	font-family: Oswald; 
+	font-size: 8px;
+}
+#subtit2{
+	margin-top:10px; 
+	text-align:center; 
+	font-family: Oswald; 
+	font-size: 8px;
+}
+#boton2 {
+	background-color: #0e4578;
+    border: none;
+    color: white;
+    padding: 5px 12px;
+	position:static;
+	left:5%;
+	width:75%; 
+	font-family: Oswald; 
+	font-style: bold;
+	font-size: 8px;
+	margin:8px;
+
+}
+
+.tabtop{
+	width:100%;
+	margin-top: 35px;
+	margin-bottom:50px;
+	font-family: Oswald;
+	font-size: 10px;
+	
+}
+
+.tabbot{
+	width:100%;
+	margin-top: 25px;
+	font-family: Oswald;
+	font-size: 8px;
+
+}
+.tit{
+	font-family: Oswald;
+	font-size: 10px;
+}
+#menutab1{
+	margin-top: 10px;
+	margin-left: 15px;
+}
+#td1{
+	width:50px;
+}
+#td2{
+	text-align:left;
+}
+#tabla{
+	margin:5px;
+	margin-top:35px;
+	font-family: Oswald;
+	font-size: 8px;
+	
+}
+#tablauv{
+	margin-left:25px;
+	margin-top:75px;
+	font-family: Oswald;
+	font-size: 8px;
+	
+}
+#irauv{
+	width:100%;
+}
+.tabtop-prc{
+	width:100%;
+	margin-top: 35px;
+	margin-bottom:20px;
+	font-family: Oswald;
+	font-size: 10px;
+	
+}
+.tabbot-prc{
+	width:100%;
+	margin-top: 25px;
+	font-family: Oswald;
+	font-size: 8px;
+
+}
+#notasprc{
+	margin-top:10px;
+	height:270px;
+	width:100%;
+	overflow:auto;
+}
+#notasprc2{
+	margin-top:10px;
+	height:170px;
+	width:100%;
+	overflow:auto;
+}
+#botonside-notas {
+	background-color: #0e4578;
+    border: none;
+    color: white;
+    padding: 5px;
+	position:static;
+	width:100%; 
+	font-family: Oswald; 
+	font-style: bold;
+	font-size: 10px;
+
+}
+#notas{
+	margin:1px;
+	font-family: Oswald;
+	font-size:8px;
+}
+#bot-notas {
+	background-color: white;
+	font-family: Oswald;
+	font-size: 10px;
+}
+
+
+
+
+
+
+
+
+#volv {
+	height:25px;
+	bottom:2px;
+	text-align:center;
+	margin-top:5px;
+	margin-right:14px;
+	margin-bottom:5px;
+	font-family: Anton;
+	font-size:11px;
+
+}
+
+#bottom{
+	position:fixed;
+	bottom:0;
+	margin:2px;
+	height: 12px;
+	width: 29%;
+	background-color: white;
+	text-align:center;
+	font-family: Oswald; 
+	font-style: bold;
+	font-size: 10px;
+	
+
+}
+
+
+}
+
+
+
+
+
+a:link {
+    color: black;
+}
+a:visited {
+    color: black;
+}
+a:active {
+    color: blue;
+}
+
+#pags {
+	height:100%;
+	width:100%;
+}
+/*PORTADA*/
+#map {
+	height: 100%;
+	width: 100%;
+	position:absolute;
+
+}
+
+#imagen {
+	width:95%;
+	height:300px;
+	margin-right:20px;
+	
+}
+#pags {
+	height:100%;
+	width:100%;
+}
+
+
+#botonside {
+	background-color: #0e4578;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+	position:static;
+	left:10%;
+	width:80%; 
+	font-family: Oswald; 
+	font-style: bold;
+	font-size: 16px;
+	margin:10px;
+
+}
+
+
+/* TEMPLATE INFO */
+
+#map_01{
+	height: 100%;
+	width: 65%;
+	right:0px;
+	position:absolute;
+}
+
+#map_02{
+	height: 100%;
+	width: 70%;
+	right:0px;
+	position:absolute;
+}
+
+#sideinfo {
+	margin:8px;
+	height: 100%;
+	width: 24%;
+	position:fixed;
+}
+
+
+#listaproy{
+	margin-top:30px;
+	height:250px;
+	width:90%;
+}
+
+
+
+#antecedentes {
+	margin-top:20px;
+	width:100%;
+	text-align: center;
+	display:inline-block;
+
+}
+
+#tabb {
+	font-family: Oswald;
+	font-size: 12px;
+}
+
+#webgl {
+	height: 100%;
+	width: 75%;
+	right:0px;
+	position:fixed;
+}

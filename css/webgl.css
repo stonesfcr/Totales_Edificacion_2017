@@ -1,0 +1,168 @@
+html, body {
+	height:100%;
+  	width:100%;
+  	margin:0px;
+}
+
+div#listaproy, div#tabla h6{
+	font-family: Oswald;
+	font-size:20px;
+}
+
+
+a:link {
+    color: black;
+}
+a:visited {
+    color: black;
+}
+a:active {
+    color: blue;
+}
+
+
+
+
+
+
+#imagen {
+	width:95%;
+	height:300px;
+	margin-right:20px;
+	
+}
+
+
+
+
+
+#pags {
+	height:100%;
+	width:100%;
+}
+
+
+/*PORTADA*/
+
+#map {
+	height: 100%;
+	width: 100%;
+
+	position:absolute;
+
+}
+
+
+/* TEMPLATE INFO */
+
+#logima2{
+	float:left;
+	margin-top:20px;
+	margin-left:25px;
+}
+
+
+#sideinfo {
+	margin:8px;
+	height: 100%;
+	width: 25%;
+	position:fixed;
+}
+
+
+
+#tabla{
+	margin:25px;
+	margin-top:55px;
+	min-height:350px;
+	font-family: Oswald;
+	font-size: 12px;
+	
+}
+
+.tabtop{
+	width:100%;
+	margin-top: 85px;
+	margin-bottom:50px;
+	font-family: Oswald;
+	font-size: 18px;
+	
+}
+
+.tabbot{
+	width:100%;
+	margin-top: 25px;
+	font-family: Oswald;
+	font-size: 16px;
+
+}
+
+.tabtop-prc{
+	width:100%;
+	margin-top: 35px;
+	margin-bottom:20px;
+	font-family: Oswald;
+	font-size: 18px;
+	
+}
+
+
+
+.tabbot-prc{
+	width:100%;
+	margin-top: 25px;
+	font-family: Oswald;
+	font-size: 13px;
+
+}
+
+#listaproy{
+	margin-top:30px;
+	height:250px;
+	width:90%;
+}
+
+#notasprc{
+	margin-top:30px;
+	height:270px;
+	width:100%;
+	overflow:auto;
+}
+
+
+
+#antecedentes {
+	margin-top:30px;
+	width:100%;
+	text-align: center;
+	display:inline-block;
+
+}
+
+
+#tabb {
+	font-family: Oswald;
+	font-size: 14px;
+}
+
+
+#volv {
+	height:25px;
+	text-align:center;
+	margin-top:5px;
+	margin-bottom:5px;
+	font-family: Anton;
+	font-size:14px;
+}
+
+#bottom{
+	width:100%;
+	position: absolute;
+    bottom: 5px;
+}
+
+#notas{
+	margin:5px;
+	font-family: Oswald;
+	font-size:12px;
+}
