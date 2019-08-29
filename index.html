@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>index</title>
+<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<link rel="stylesheet" type="text/css" href="./Qgis2threejs.css">
+<link rel="stylesheet" href="css/stport.css"/>
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+<!-- GOOGLEFONT -->
+<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 
+<script src="js/angular.min.js"></script>
+</head>
+<body>
+<div id="sideinfo">
+  <div id="logima2" >
+    <a href="http://www.municipalidadantofagasta.cl/" target="_blank"><img id="logo2" src="images/LogoMuni_g.png" alt="IMAlogo" /></a> 
+  </div>
+  <div id="titulo">PLAN REGULADOR COMUNAL</div>
+  <div style="height:350px;">
+    <div id="tabla">
+        <table class="tabtop">
+            <tr>
+              <th>TOTALES METROS CONSTRUIDOS 2010-2016</th>
+            </tr>
+            <tr>
+              <td>(Click para ver información)</td>
+            </tr>
+            <tr>
+              <td id="informac"></td>
+            </tr>
+            
+        </table>
+    </div>
+  </div>
+  <div id="simbologia">
+    SIMBOLOGÍA
+    <table >
+      <tr>
+        <td style="td1"><img src="legend/sj_tess_02_1_10900.png" /></td>
+        <td style="td2"> 10 - 90 </td>
+      </tr>
+      <tr>
+        <td style="text-align: center;"><img src="legend/sj_tess_02_1_901381.png" /></td><td> 90 - 138 </td></tr><tr><td style="text-align: center;"><img src="legend/sj_tess_02_1_1381882.png" /></td><td> 138 - 188 </td></tr><tr><td style="text-align: center;"><img src="legend/sj_tess_02_1_1882473.png" /></td><td> 188 - 247 </td></tr><tr><td style="text-align: center;"><img src="legend/sj_tess_02_1_2473584.png" /></td><td> 247 - 358 </td></tr><tr><td style="text-align: center;"><img src="legend/sj_tess_02_1_3585725.png" /></td><td> 358 - 572 </td></tr><tr><td style="text-align: center;"><img src="legend/sj_tess_02_1_57210616.png" /></td><td> 572 - 1061 </td></tr><tr><td style="text-align: center;"><img src="legend/sj_tess_02_1_106125777.png" /></td><td> 1061 - 2577 </td></tr><tr><td style="text-align: center;"><img src="legend/sj_tess_02_1_257789258.png" /></td><td> 2577 - 8925 </td></tr><tr><td style="text-align: center;"><img src="legend/sj_tess_02_1_89251141099.png" /></td><td> 8925 - 114109 </td></tr></table>
+  </div>
+  
+</div>
+<div id="bottom">
+        <a href="../index.html">Volver</a>
+</div>
+<div id="webgl"></div>
+<div id="labels"></div>
+
+<!-- popup -->
+<div id="popup" style="display:none;">
+<div id="closebtn">&times;</div>
+<div id="popupbar"></div>
+<div id="popupbody">
+ <div id="popupcontent"></div>
+ <div id="pageinfo">
+  <h1>Current View URL</h1>
+  <div><input id="urlbox" type="text"></div>
+
+  <h1>Usage</h1>
+  <div id="usage"></div>
+
+  <h1>About</h1>
+  <div id="about">Pagina hecha con las siguientes librerias:
+  <ul>
+  <li>three.js <a href="http://threejs.org/" target="_blank">http://threejs.org/</a> <a href="./threejs/LICENSE" target="_blank" class="license">(LICENSE)</a></li>
+  <li>dat-gui <a href="https://code.google.com/p/dat-gui/" target="_blank">https://code.google.com/p/dat-gui/</a> <a href="./dat-gui/license.txt" target="_blank" class="license">(LICENSE)</a></li>
+  <li id="lib_proj4js" style="display: none;">Proj4js <a href="http://trac.osgeo.org/proj4js/" target="_blank">http://trac.osgeo.org/proj4js/</a> <a href="./proj4js/LICENSE.md" target="_blank" class="license">(LICENSE)</a></li>
+  </ul>
+  </div>
+ </div>
+</div></div>
+
+<div id="footer"></div>
+
+<script src="./threejs/three.min.js"></script>
+<script src="./Qgis2threejs.js"></script>
+<script src="./threejs/OrbitControls.js"></script>
+<script src="./dat-gui/dat.gui.min.js"></script>
+<script src="./dat-gui_panel.js"></script>
+<script>
+var option = Q3D.Options;
+option.bgcolor = 0xffffff;
+</script>
+
+<script>
+if (typeof proj4 !== "undefined") document.getElementById("lib_proj4js").style.display = "list-item";
+var app = Q3D.application,
+    container = document.getElementById("webgl");
+app.init(container, true);   
+app.addEventListener("sceneLoaded", function () {
+  var box = new THREE.Box3().setFromObject(app.scene),
+      zMin = app.scene.toMapCoordinates(0, 0, box.min.y).z,
+      zMax = app.scene.toMapCoordinates(0, 0, box.max.y).z;
+  Q3D.gui.initCustomPlaneFolder(zMin, zMax);
+});
+app.loadJSONFile("./data/index/scene.json", function () {
+  Q3D.gui.init();  
+});
+app.start();
+</script>
+</body>
+</html>
